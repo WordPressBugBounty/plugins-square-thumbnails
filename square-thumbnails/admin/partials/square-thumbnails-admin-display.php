@@ -13,13 +13,8 @@
  */
 
 ?>
-<style>
-    p, form{
-        font-size:18px;
-    }
-</style>
-<h1>Square Thumbnails Plugin v. 2.0.1</h1>
-<div style="font-size:16px;">
+<h1>Square Thumbnails Plugin v. 1.1.0</h1>
+
 <p>Square Thumbails is a plugin for creating square thumbnails from images, without cropping them. It is like when you set background image in CSS to contain.</p>
 <h2>Available options</h2>
 <ul style="list-style-type: disc;padding-left:30px;">
@@ -31,21 +26,10 @@
 </ul>
 
 
-<div style="font-size:20px; font-weight:bold;">If you want to help me to offer SUPPORT, to add new functionalities and to keep this plugin updated, please donate any amount:
-<p>
-<a href="https://paypal.me/narcisbodea" target="_blank">Click here to donate by paypal.</a> or <a href="https://revolut.me/nicunatymj" target="_blank">Click here to donate by revolut.</a> or <a href="https://buymeacoffee.com/narcisbodea" target="_blank">Click here to buy me a coffee.</a></p>
-</p>
-</div>
+<p>If you want help, please click this <a href="">link</a></p>
 
-<div style="ont-size: 20px;
-    font-weight: bold;
-    border: 1px solid green;
-    padding: 10px;
-    box-sizing: border-box;
-    max-width: 90%;
-    background: azure;">Thank you for using Square Thumbnails Plugin!</div>
+<div style="color:navy;font-size:16px;margin-top:30px;">Thank you for using Square Thumbnails Plugin!</div>
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
-</div>
 <hr>
 <h1>Settings</h1>
 <hr>
@@ -71,7 +55,7 @@
         </select>
         </label
         <br>
-        <label>
+        <label>`
         Vertical        
         <select id="sqt_valign">
             <option value="top" <?php selected(get_option($this->option_name.'_valign'), 'top', true); ?>>Top</option>

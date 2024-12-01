@@ -1,10 +1,10 @@
 === Square Thumbnails ===
-Contributors: ilmdesigns, nicunarcisbodea
-Donate link: https://paypal.me/narcisbodea
+Contributors: ilmdesigns
+Donate link: http://ilmdesigns.com/portfolio_page/square-thumbnails-plugin/
 Tags: crop, woocommerce, square thumbnails
 Requires at least: 3.5
-Tested up to: 6.5
-Stable tag: 2.0.1
+Tested up to: 4.8
+Stable tag: 2.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,15 +42,8 @@ Here is a screen shot with an uploaded image when the plugin is activated. You c
 
 == Changelog ==
 
-
-= 2.0.1 =
-version number fixed
-= 2.0 =
-Major update
-- compatibility with all PHP versions
-- compatibility with latest wordpress versions, tested with 6.5.5
-- added support for WEBP formats
-- other fixes and optimizations
+= 2.0.2 =
+Removed donation link in admin.
 = 1.1.2 =
 Fixed all errors displayed in plugin check
 = 1.1.1 =

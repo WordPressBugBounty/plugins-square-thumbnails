@@ -69,7 +69,7 @@ class Square_Thumbnails {
 	public function __construct() {
 
 		$this->plugin_name = 'square-thumbnails';
-		$this->version = '2.0.1';
+		$this->version = '2.0.2';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -152,12 +152,12 @@ class Square_Thumbnails {
                 $this->loader->add_action( 'admin_menu', $plugin_admin, 'display_admin_page' );
                 $this->loader->add_filter( 'plugin_action_links_' . SQUARE_THUMBNAILS_FILE, $plugin_admin, 'link_settings' );
                 $this->loader->add_filter('wp_generate_attachment_metadata',$plugin_admin, 'make_square_size_image', 10, 6);
-				$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
-				$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
+		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
                 $this->loader->add_action( 'square-thumbnails-settings', $plugin_admin, 'square_settings' );
                 $this->loader->add_action( 'wp_ajax_sqt_settings', $plugin_admin, 'sqt_settings_save' );
-                // $this->loader->add_action( 'wp_ajax_nopriv_sqt_settings',  $plugin_admin, 'sqt_settings_save'  );   
-                $this->loader->add_action( 'admin_notices',  $plugin_admin, 'donation_notice');   
+                $this->loader->add_action( 'wp_ajax_nopriv_sqt_settings',  $plugin_admin, 'sqt_settings_save'  );   
+                // $this->loader->add_action( 'admin_notices',  $plugin_admin, 'donation_notice');   
 
 	}
 

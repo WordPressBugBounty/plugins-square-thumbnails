@@ -35,7 +35,6 @@ $(function() {
             halign: $('#sqt_halign').val(),
             valign: $('#sqt_valign').val(),
             bgcolor: $('#sqt_bgcolor').val(),
-            sqt_nonce: $('#sqt_nonce').val(),
             getimcolor: ($('#sqt_getimcolor').is(':checked')?1:0),
             dofill: ($('#sqt_dofill').is(':checked')?1:0),
             tooriginal: ($('#sqt_tooriginal').is(':checked')?1:0),
@@ -43,7 +42,7 @@ $(function() {
         };
 
         $.post( ajaxurl, data, function(response) {
-				alert('The settings were saved!');
+alert('The settings were saved!');
         });        
     });
     });  
